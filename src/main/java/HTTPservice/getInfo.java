@@ -9,7 +9,7 @@ import java.io.IOException;
 public class getInfo {
     private OkHttpClient client = new OkHttpClient();
     public String run(String roomID) throws IOException {
-        String url = "http://open.douyucdn.cn/api/RoomApi/room/" + roomID;
+        String url = "http://www.douyutv.com/swf_api/room/" + roomID;
         Request request = new Request.Builder().url(url).build();
         Response response = client.newCall(request).execute();
         if (response.isSuccessful()) {
